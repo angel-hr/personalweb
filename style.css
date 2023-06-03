@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(120, 156, 105);
+    color: rgb(255, 255, 255);
+    font-family: 'Avenir Next';
+    font: 16px;
+}   
+
+nav {
+    background:rgb(24, 54, 34);
+    color: white;
+    height: 80px;
+    width: 100%;
+}
+
+label.mylogo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+ul {
+    float: right;
+    margin: 0 50px;
+    display: flex;
+}
+
+ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    color:white;
+    font-size: 17px;
+    border-radius: 10%;
+    padding: 20px 10px;
+}
+
+a:hover {
+    background: rgb(81, 157, 49);
+    transition: .5s;
+    color: white;
+}
+
+@media (max-width:850px){
+    label.mylogo {
+        font-size:30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: rgb(90, 86, 86);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        display: block;
+        padding: 0 10px;
+        border-radius: 0;
+    }
+
+    nav ul li:hover a {
+        background-color: rgb(115, 204, 164);
+        color: black;  
+    }
+
+    nav ul li:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: rgb(81, 157, 49);
+        z-index: -1;
+    }
+}
+
+/* about me page */
+h3 {
+    color: black;
+    margin: 30px 30px 30px;
+}
+
+.abt-container {
+    display: flex;
+    background: rgb(51, 76, 41);
+}
+
+.float-child, .float-child2 {
+    flex: 1;
+    margin: 10px;
+}
+
+.float-child {
+    flex: 1;
+    float: left;
+    background-color: rgb(25, 29, 25);
+    border: 5px solid white;
+    border-radius: 5%;
+}
+
+.float-child p {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2vw;
+    border-radius: 5%;
+}
+
+.float-child2 {
+    flex: 1;
+    float: right;
+    display: flex;
+    border: 5px solid white;
+    border-radius: 5%;
+}
+
+.float-child2 img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+}
+
+.resume {
+    padding: 30px 60px 30px 60px;
+    background-color: rgb(72, 98, 59);
+}
+
+/* about page end */
+
+/* c++ page */
+.cpluscontainer {
+    width: 95vw;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: auto;
+   background-image: url('waves/waves.jpg');
+   background-size: cover;
+   background-position: center;
+   border-radius: 5%;
+}
+
+.circle { 
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:  rgb(97, 131, 159);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+}
+
+.circle a {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(19, 72, 135);
+}
+
+.circle a:hover {
+    color: black;
+    background-color: inherit;
+    font-weight: bold;
+}
+
+
+@media (max-width:700px) {
+    .cpluscontainer {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+
+/* end of c++ page */
+
+/* python and R */
+.container {
+    width: 100%;
+    height: 1200px;
+    background-color: gray;
+}
+
+.one {
+    width: 100%;
+    height: 450px;
+    background-color: rgb(46, 55, 46);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two {
+    width: 100%;
+    height: 450px;
+    background: rgb(179, 205, 179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.three {
+    width: 100%;
+    height: 450px;
+    background-color: rgb(84, 101, 84);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.float1 {
+    flex: 1;
+    float: left;
+    height: 300px;
+    width: 30vw;
+    border: 3px solid white;
+    background-color: rgb(120, 156, 105);
+    text-align: center;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.float2 {
+    float: right;
+    border: 3px solid rgb(255, 255, 255);
+    height: 300px;
+    width: 60vw;
+    border-radius: 5%;
+}
+
+.float2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+@media (max-width:800px){
+    .float1 {
+        width: 28vw;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .float2 {
+        width: 55vw;
+    }
+
+    .float2 img {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .float1 {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        border-radius: 7%;
+    }
+}
+
+/* end of python page */
+
+
+.img-container {
+    display: flex;
+    margin: 20px auto;
+    width:95vw;
+    height:100vh;
+    border: 3px solid white;
+    border-radius: 5%;;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
