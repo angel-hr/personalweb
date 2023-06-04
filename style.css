@@ -194,6 +194,12 @@ h3 {
     background-color: rgb(72, 98, 59);
 }
 
+@media (max-width: 500px){
+    .resume {
+        padding: 0 0 0 0;
+    }
+}
+
 .LinkedIn {
     background: #313335;
     width: 100%;
