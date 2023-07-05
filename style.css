@@ -136,6 +136,10 @@ a {
 }
 
 @media (max-width: 430px){
+    h3 {
+        display: flex;
+        justify-content: center;
+    }
     .mylogo {
        font-size: 20px; 
     }  
@@ -363,6 +367,9 @@ h3 {
 }
 
 @media (max-width:800px){
+    h2 {
+        font-size: 23px;
+    }
     .float1 {
         width: 28vw;
         font-size: 15px;
@@ -380,6 +387,11 @@ h3 {
 }
 
 @media (max-width:600px) {
+    h2 {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
     .float1 {
         font-size: 14px;
         display: flex;
@@ -389,6 +401,10 @@ h3 {
 }
 
 @media only screen and (max-width: 425px) {
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
     .float1 {
         font-size: 10px;
     }
